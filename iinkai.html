@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <link href="./new6-common-header-footer.css" rel="stylesheet" type="text/css" media="all">
+
+    <meta charset="utf-8">
+    <!--<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">-->
+    <title>About us</title>
+    <style>
+      /*大学祭実行委員会説明*/
+      #top{
+        position: relative;
+        text-align: center;
+        margin-top: 30px;
+        margin-right: 8%;
+        margin-left: 8%;
+        padding: 5%;
+        border: 2px solid black;
+        border-radius: 30px;
+        background-color:rgba(255,255,255,0.7);
+      }
+
+      /*ページ内ジャンプボタン*/
+      #button{
+        position: relative;
+      }
+      .a{
+        display: inline-block;
+        text-decoration:none;
+        text-align: center;
+        font-size: 20px;
+        width: 100px;
+        margin-top: 20px;
+        margin-right: 2%;
+        margin-left: 2%;
+        padding: 15px;
+        border: 2px solid black;
+        border-radius: 40px;
+        background-color: black;
+        color: white;
+        box-shadow: 4px 6px 3px 0px rgba(0, 0, 0, .5);
+      }
+      .a:hover{
+        border: 2px solid #33CC66;
+        background-color: #33CC66;
+        box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+        transition: .5s;
+      }
+      .a:active{
+        background-color: white;
+        color: #33CC66;
+        box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+        transition: 0s;
+      }
+
+      /*委員会名*/
+      h2{
+        color: black;
+        border-bottom: 2px solid #33CC66;
+      }
+
+      /*箇条書き空白調整*/
+      ul{
+        position: relative;
+        text-align: center;
+        list-style: none;
+        margin-right: 8%;
+        margin-left: 8%;
+        padding: 5%;
+        border: 2px solid black;
+        border-radius: 30px;
+        background-color:rgba(255,255,255,0.7);
+      }
+      .div{
+        margin-right: 3%;
+        margin-left: 3%;
+      }
+
+      /*箇条書き画像位置調整*/
+      .img{
+        width: 250px;
+        height: auto;
+      }
+
+      /*topへ戻るボタン*/
+      .page_top_btn {
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+      }
+    </style>
+
+    <style media="screen">
+    .paint{
+      opacity: 0.2;
+      background-color:rgb(192, 61, 9);
+      position:fixed;
+      border-radius: 50%;
+      height:120px;
+      width:120px;
+      z-index:0;
+    }
+    </style>
+  </head>
+
+
+  <body style="margin: 0px">
+    <a href="#page_top" class="page_top_btn">トップへ戻る</a>
+    <div id="page_top"></div>
+    <!-- /*水玉のhtml*/ -->
+    <div id="back"></div>
+    <header>
+      <div class="header-title">
+        <!--/*市大祭のロゴ*/ -->
+        <div id="ichidaisai">
+          <a href="./home.html">
+          <img id="ichidaisai-rogo" src="rogogo-reverse-cut-clear.jpg" style="width: 50%;">
+        </a>
+        </div>
+      </div>
+      <div class="header-table">
+        <table>
+          <tr>
+            <!--/*メニューボタン*/ -->
+            <!--<td><a id="Home-button" href="https://staging.ichidaisai.com/dashboard/private_html/home.html">Home</a></td>-->
+            <td><a id="Stage-Event-button" href="./event.html">Stage+Event</a></td>
+            <td><a id="Aboutus-button" href="./iinkai.html">About us</a></td>
+            <td><a id="Map-Access-button" href="./access.html">Map+Access</a></td>
+          </tr>
+        </table>
+      </div>
+    </header>
+
+
+    <div id="top" class="div">
+      <h1 class="center">大学祭実行委員会</h1>
+      <p class="center">
+        大学祭実行委員会は9個の局に分かれて仕事を分担し、中心となって大学祭を盛り上げる活動をしています。<br>
+        ここではそれぞれの局がどのような仕事をしているか紹介しています。<br>
+        学年、時期問わず興味のある方はいつでも大歓迎！学生会館二階に大祭室があるので、気軽にお立ち寄りください！
+      </p>
+
+      <div id="button"  class="div">
+        <a class="a" href="#iintyou">委員長局</a>
+        <a class="a" href="#soumu">総務局</a>
+        <a class="a" href="#sisutemu">システム局</a>
+        <a class="a" href="#kaikei">会計局</a>
+        <a class="a" href="#kikaku">企画局</a>
+        <a class="a" href="#mogi">模擬局</a>
+        <a class="a" href="#sousyoku">装飾局</a>
+        <a class="a" href="#kouhou">広報局</a>
+        <a class="a" href="#kafe">カフェ局</a>
+      </div>
+    </div>
+
+<!--委員長局-->
+    <ul id="iintyou">
+      <h2>委員長局</h2>
+      <p>
+        　メンバーは、3年生と2年生ともに3人ずつの計6人！学年や性別の壁を感じない雰囲気が最高です！マックのポテトを与えておけばおとなしくなります(写真見てね笑)
+        お仕事としては、大学祭全体のまとめ役です。といっても堅苦しいお偉いさんではなく、各局のお手伝いや相談役、そしてイベントの企画などをやっています！
+        そして委員長局に入ったからといって来年必ず委員長にならないといけない、というのは全くありません！ご安心を～<br>
+        いろんなことをやってみたい！大学の雰囲気を知りたい！おいしいご飯をみんなと食べたい！ポテト大好き！というそこのあなた、是非委員長局へ！
+      </p>
+
+      <div align=center class="div">
+        <div style="display: inline-block" align=center>
+          <h3>-------- 仕事内容 --------</h3>
+          <li>大学祭全体をまとめる局</li>
+          <li>仕事の振り分けと大学祭全体の管理</li>
+          <li>各局のサポートに回る</li>
+          <li>バーベキューなどのイベントの企画</li>
+
+          <h3>-------- メンバー --------</h3>
+          <li>委員長：三上　航平</li>
+          <li>副委員長：藤本　幸　　</li>
+          <li>副委員長：岩城　のどか</li><br>
+        </div>
+        <div style="display: inline-block" align=center  class="div">
+          <img id="photo1" class="img" src="">
+        </div>
+      </div>
+    </ul>
+
+<!--総務局-->
+    <ul id="soumu">
+      <h2>総務局</h2>
+      <p>
+        　総務局は基本的に仕事数が少なく、空き時間には喋ったりトランプしたりなどして交友を深めることを出来ます。
+        また、総務局自体の仕事が少ない分他の局に手伝いに行くことができ、多くの人と関わりを持ちたい人などにとって非常に都合のいい局だと言えます！<br>
+        仕事内容は机、椅子等の管理や土嚢作成などの単純作業が多いです。また、総務局は男女比1:1なので、男子学生も女子学生も入りやすい環境になっています！
+        遠慮なく声かけてもらって大丈夫なので、気軽にお声かけください！
+      </p>
+
+      <div align=center class="div">
+        <div style="display: inline-block" align=center class="div">
+          <h3>-------- 仕事内容 --------</h3>
+          <li>備品の管理</li>
+          <li>備品の貸し出し</li>
+          <li>備品の点検</li>
+
+          <h3>-------- メンバー --------</h3>
+          <li>局長：小林　雅明</li>
+          <!--<li>副局長：</li>--><br>
+        </div>
+        <div style="display: inline-block" align=center class="div">
+          <img id="photo2" class="img" src="">
+        </div>
+      </div>
+    </ul>
+
+<!--システム局-->
+    <ul id="sisutemu">
+      <h2>システム局</h2>
+      <p>
+        　今年新設のシステム局です！仕事内容は出店者とのやり取りをするサイトの管理やホームページ更新がメインになります。
+        3年生3人、2年生4人(男子3人女子4人、みんな情報)で活動中！全員兼部しています！ちなみに局長(佐藤)は吹奏楽部です！<br>
+        Webアプリやプログラミングに興味がある人、ちょっとでもやってみたいな～と思ったらぜひシステム局へ！
+      </p>
+
+      <div align=center class="div">
+        <div style="display: inline-block" align=center class="div">
+          <h3>-------- 仕事内容 --------</h3>
+          <li>サイトの管理</li>
+          <li>ホームページの更新</li>
+
+          <h3>-------- メンバー --------</h3>
+          <li>局長：佐藤　優紀</li>
+          <li>副局長：兼定　諒</li>
+          <li>副局長：上田　徳彦</li><br>
+        </div>
+        <div style="display: inline-block" align=center class="div">
+          <img id="photo3" class="img" src="">
+        </div>
+      </div>
+    </ul>
+
+<!--会計局-->
+    <ul id="kaikei">
+      <h2>会計局</h2>
+      <p>
+        　どの局に入ろうか迷っているそこのあなた！会計局に入りませんか？ 一緒に会計ライフを送りましょう！
+      </p>
+
+      <div align=center class="div">
+        <div style="display: inline-block" align=center class="div">
+          <h3>-------- 仕事内容 --------</h3>
+          <li>協賛金、物品協賛の収集</li>
+          <li>大学祭実行委員会のお金の管理</li>
+          <li>決算報告書の作成</li>
+
+          <h3>-------- メンバー --------</h3>
+          <li>局長：宮下　岳大</li>
+          <li>副局長：西川　潤</li><br>
+        </div>
+        <div style="display: inline-block" align=center class="div">
+          <img id="photo4" class="img" src="">
+        </div>
+      </div>
+    </ul>
+
+<!--企画局-->
+    <ul id="kikaku">
+      <h2>企画局</h2>
+      <p>
+        　男女関係なく、楽しいことをするのが好きな人は企画局に集合！1番楽しい局にしようと思ってます！
+        ちょっとでも興味があったら大学祭に遊びに来てください～～～！
+      </p>
+
+      <div align=center class="div">
+        <div style="display: inline-block" align=center class="div">
+          <h3>-------- 仕事内容 --------</h3>
+          <li>みんなが楽しめる企画を考える</li>
+          <li>ステージ設営</li>
+
+          <h3>-------- メンバー --------</h3>
+          <li>局長：武智　愛未</li>
+          <li>副局長：佐久川　愛野</li><br>
+        </div>
+        <div style="display: inline-block" align=center class="div">
+          <img id="photo5" class="img" src="">
+        </div>
+      </div>
+    </ul>
+
+<!--模擬局-->
+    <ul id="mogi">
+      <h2>模擬局</h2>
+      <p>
+        　私たち模擬局は3年生5人、2年生3人で活動しています。主な活動内容は模擬店(出店)に関するお仕事です。
+        模擬店の出店者と備品を管理する業者様の仲介を行います。他にも模擬店のテント設営や、模擬店の出店もしたりします。
+        テント設営は他の局と合同で行うので心配無用！模擬店も皆さんのアイディアをたくさん取り入れてたいと思っています！<br>
+        新入生から3年生まで壁を作らないことを目標に活動していきます！ラフな気持ちでゆっくり楽しんでいきましょう！
+      </p>
+
+      <div align=center class="div">
+        <div style="display: inline-block" align=center class="div">
+          <h3>-------- 仕事内容 --------</h3>
+          <li>出店者会議</li>
+          <li>業者様との連携</li>
+          <li>テント設営</li>
+          <li>模擬店出店</li>
+
+          <h3>-------- メンバー --------</h3>
+          <li>局長：和田　洸記</li>
+          <li>副局長：吉田　智紀</li>
+          <li>副局長：山田　長宗</li><br>
+        </div>
+        <div style="display: inline-block" align=center class="div">
+          <img id="photo6" class="img" src="">
+        </div>
+      </div>
+    </ul>
+
+<!--装飾局-->
+    <ul id="sousyoku">
+      <h2>装飾局</h2>
+      <p>
+        　装飾局はブルゾンのデザインや、ステージパネル、エントランス、タイムテーブルの作成、設置といった、デザインやモノづくりの仕事がメインになります！
+        現在、局員が情報の男3人しかいないので、デザインが得意な芸術や国際の人は大歓迎です！人数が少ない分、局員同士の距離が近いので先輩と仲良くなりたい人は是非、装飾局に！
+      </p>
+
+      <div align=center class="div">
+        <div style="display: inline-block" align=center class="div">
+          <h3>-------- 仕事内容 --------</h3>
+          <li>ポスターコンクール</li>
+          <li>ブルゾンデザイン</li>
+          <li>ステージパネル制作(設営は他局と一緒に)</li>
+          <li>エントランス制作、設営</li>
+
+          <h3>-------- メンバー --------</h3>
+          <li>局長：早川　優吾</li>
+          <li>副局長：大脇　秀明</li><br>
+        </div>
+        <div style="display: inline-block" align=center class="div">
+          <img id="photo7" class="img" src="">
+        </div>
+      </div>
+    </ul>
+
+<!--広報局-->
+    <ul id="kouhou">
+      <h2>広報局</h2>
+      <p>
+        　各局のイラストを描かせていただきました～見てね！大学祭の宣伝を一緒に盛り上げてくれる方、
+        芸術学部の方でイラレの練習をしたい方(illustrator使えるよって子大募集です！)、優しい先輩たちと仲良くなりたい方にお勧めです！<br>
+        なんか難しそう、、、と思ったそこのあなた！私たちが一から丁寧に説明致します！今は3年生3人のみで活動しているので、1・2年生を大大大募集中！
+        一緒に頑張る仲間が増えることを楽しみに待っています！
+      </p>
+
+      <div align=center class="div">
+        <div style="display: inline-block" align=center class="div">
+          <h3>-------- 仕事内容 --------</h3>
+          <li>パンフレット作成</li>
+          <li>SNS運営</li>
+          <li>校内案内用の標識作成</li>
+          <li>当日の総合案内担当</li>
+
+          <h3>-------- メンバー --------</h3>
+          <li>局長：橘　真友紀</li>
+          <li>副局長：幸本　柚音</li><br>
+        </div>
+        <div style="display: inline-block" align=center class="div">
+          <img id="photo8" class="img" src="">
+        </div>
+      </div>
+    </ul>
+
+<!--カフェ局-->
+    <ul id="kafe">
+      <h2>カフェ局</h2>
+      <p>
+        　基本的に出店者との円滑なコミュニケーションが重要になってきます！なんとただいま局員約6名全員女の子！もちろん男の子もお待ちしております！
+      </p>
+
+      <div align=center class="div">
+        <div style="display: inline-block" align=center class="div">
+          <h3>-------- 仕事内容 --------</h3>
+          <li>保健所との連携</li>
+          <li>出店者会議の開催</li>
+          <li>出店書類の整理</li>
+          <li>当日の見回り</li>
+
+          <h3>-------- メンバー --------</h3>
+          <li>局長：山本　梨央</li>
+          <li>副局長：山本　愛奈</li><br>
+        </div>
+        <div style="display: inline-block" align=center class="div">
+          <img id="photo9" class="img" src="">
+        </div>
+      </div>
+    </ul>
+
+    <!--/*フッタ―始まり*/ -->
+    <footer>
+      <div class="footer-title">お問い合わせ</div>
+      <div class="footer-inner">
+        <table style="margin: auto;">
+          <tr><td>〒731-3194</td></tr>
+          <tr><td>広島市大塚３丁目４番１号</td></tr>
+          <tr><td>学生会館２階大祭室</td></tr>
+          <tr><td>TEL & fax ： (082)848-5443</td></tr>
+          <tr><td>MAIL ： <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="8ae3e9e2e3eeebe3f9ebe3cae5fffee6e5e5e1a4e0faa4">[email&#160;protected]</a></td></tr>
+          <tr><td>広島市立大学大学祭実行委員会</td></tr>
+        </table>
+        <br><br>
+        <tr>
+          <!--/*ツイッター*/ -->
+          <td><a style="text-decoration:none" href="https://twitter.com/ichidai_sai">
+            <img id="Twitter" src="2021Twitterlogo-blue.png" alt="ichidaisai-twitter" width="50" height="50">
+          </a></td>
+        </tr>
+        <tr>
+          <td>　　 </td>
+        </tr>
+        <tr>
+          <!--/*インスタグラム*/ -->
+          <td><a href="https://www.instagram.com/ichidai_sai/">
+            <img id="Instagram" src="InstagramGlyphGradientRGB.png" alt="ichidaisai-twitter" width="50" height="50">
+          </a></td>
+        <br><br><br>
+      </div>
+    </footer>
+    <!--/*フッタ―終わり*/-->
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body>
+
+
+<!--画像時間差表示-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script type="text/javascript">
+    var photo1 = new Array("photo0101.jpg","photo0102.jpg","photo0103.jpg","photo0104.jpg");
+    var photo2 = new Array("photo0201.jpg","photo0202.jpg","photo0203.jpg","photo0204.jpg","photo0205.jpg");
+    var photo3 = new Array("photo0301.jpg","photo0302.jpg");
+    var photo4 = new Array("photo0401.jpg","photo0402.jpg","photo0403.jpg");
+    var photo5 = new Array("photo0501.jpg","photo0502.jpg","photo0503.jpg","photo0504.jpg","photo0505.jpg");
+    var photo6 = new Array("photo0601.jpg","photo0602.jpg","photo0603.jpg","photo0604.jpg");
+    var photo7 = new Array("photo0701.jpg","photo0702.jpg","photo0703.jpg","photo0704.jpg");
+    var photo8 = new Array("photo0801.jpg","photo0802.jpg","photo0803.jpg","photo0804.jpg");
+    var photo9 = new Array("photo0901.jpg","photo0902.jpg","photo0903.jpg","photo0904.jpg");
+    var list = new Array(photo1, photo2, photo3, photo4, photo5, photo6, photo7, photo8, photo9);
+    var numlist = new Array(-1, -1, -1, -1, -1, -1, -1, -1, -1);
+
+    slideshow_timer();
+    function slideshow_timer(){
+      for(let i=0; i<9; i++){
+        if (numlist[i] == list[i].length-1){
+          numlist[i] = 0;
+        }
+        else {
+          numlist[i] ++;
+        }
+        document.getElementById("photo" + (i+1)).src = list[i][numlist[i]];
+      }
+      setTimeout("slideshow_timer()",4000);
+    }
+  </script>
+
+<!--画面ジャンプ時のスライドモーション-->
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <script>
+    $(function(){
+      $('a[href^="#"]').click(function(){
+        var speed = 500;
+        var href= $(this).attr("href");
+        var target = $(href == "#" || href == "" ? 'html' : href);
+        var position = target.offset().top;
+        $("html, body").animate({scrollTop:position}, speed, "swing");
+        return false;
+      });
+    });
+  </script>
+
+  <!-- 水玉js -->
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+      for(let i=0;i<50;i++){
+        randomPaint();
+      }
+      function randomPaint(){
+        const back=document.getElementById('back');
+        const top_random=Math.random()*window.innerHeight+'px';
+        const left_random=Math.random()*window.innerWidth+'px';
+        const height_random=Math.random()*200+'px';
+        const r_color=parseInt(Math.random()*256);
+        const g_color=parseInt(Math.random()*256);
+        const b_color=parseInt(Math.random()*256);
+        const elem=document.createElement('div');
+        elem.classList.add('paint');
+        elem.style.top=top_random;
+        elem.style.left=left_random;
+        elem.style.width=height_random;
+        elem.style.height=height_random;
+        elem.style.backgroundColor='rgb('+r_color+','+g_color+','+b_color+')';
+        console.log('rgb('+r_color+','+g_color+','+b_color+')');
+        back.appendChild(elem);
+      }
+    </script>
+  <!-- 水玉js終わり -->
+</html>

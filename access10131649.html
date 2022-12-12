@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Map Access</title>
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <link href="./new2-common-header-footer.css" rel="stylesheet" type="text/css" media="all">
+    <style media="screen">
+    body{
+      margin: 0px;
+    }
+
+    #all-map{
+      width: 100%;
+      height: auto;
+      position: relative;
+      z-index: 100;
+    }
+    .map-table{
+      display: flex;
+      margin: 0px auto;
+      position: relative;
+      margin-left: auto;
+      margin-right: auto;
+      z-index: 100;
+    }
+    .map-sibahu-list{
+      margin: 10px;
+      padding: 1em;
+      box-shadow: 0 0 3px 3px #d4fc79, 0 0 0 0;
+      text-align: center;
+      background-color:rgba(255,255,255,0.7)
+    }
+    .map-koudou-list{
+      margin: 10px;
+      padding: 1em;
+      box-shadow: 0 0 3px 3px #c2e9fb, 0 0 0 0;
+      text-align: center;
+      background-color:rgba(255,255,255,0.7)
+    }
+    .map-kokusai-list{
+      margin: 10px;
+      padding: 1em;
+      box-shadow: 0 0 3px 3px #fbc2eb, 0 0 0 0;
+      text-align: center;
+      background-color:rgba(255,255,255,0.7)
+    }
+    .map-geijyutu-list{
+      margin: 10px;
+      padding: 1em;
+      box-shadow: 0 0 3px 3px #f6d365, 0 0 0 0;
+      text-align: center;
+      background-color:rgba(255,255,255,0.7)
+    }
+    .map-sonota-list{
+      margin: 10px;
+      padding: 1em;
+      box-shadow: 0 0 3px 3px #a6c0fe, 0 0 0 0;
+      text-align: center;
+      background-color:rgba(255,255,255,0.7)
+    }
+    .map-title{
+      font-size: 2rem;
+      width: 90%;
+      margin-top: 0px;
+      margin-right: auto;
+      margin-left: auto;
+      border-bottom: 1px solid lightgray;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      padding: 0.25em 0;
+    }
+    h1:after {
+      content: "";
+      display: block;
+      height: 4px;
+      background: -webkit-linear-gradient(to right, rgb(255, 186, 115), #ffb2b2);
+      background: linear-gradient(to right, rgb(255, 186, 115), #ffb2b2);
+    }
+
+
+    @media screen and (max-width: 960px){
+      .inner{
+        margin-left: 0%;
+        margin-right: 0%;
+      }
+    }
+
+
+    </style>
+
+  </head>
+  <body>
+    <div id="page_top"></div>
+    <!-- /*水玉のhtml*/ -->
+    <div id="back"></div>
+    <header>
+      <div class="header-title">
+        <!--/*市大祭のロゴ*/ -->
+        <div id="ichidaisai">
+          <a href="./home.html">
+          <img id="ichidaisai-rogo" src="rogogo-reverse-cut-clear.jpg" style="width: 50%;">
+        </a>
+        </div>
+      </div>
+      <div class="header-table">
+        <table>
+          <tr>
+            <!--/*メニューボタン*/ -->
+            <td><a id="Stage-Event-button" href="./event.html">Stage+Event</a></td>
+            <td><a id="Aboutus-button" href="./iinkai.html">About us</a></td>
+            <td><a id="Map-Access-button" href="./access.html">Map+Access</a></td>
+          </tr>
+        </table>
+      </div>
+    </header>
+
+    <main>
+      <div class="block">
+        <div class="inner">
+          <div class="map">
+            <h1>マップ</h1>
+            <!--/*全体マップ*/ -->
+            <div style="margin:0 auto;width:800px;">
+              <img id="all-map" src = "./maaaaaaap.png">
+            </div>
+            <table class="map-table">
+              <tr>
+                <td>
+                  <!--/*芝生のマップ*/ -->
+                  <div class="map-sibahu-list">
+                    <div class="map-title">
+                      芝生
+                    </div>
+                    <p>Left Side(A)<div style="width:50%;">
+                      <img id="sibahu-left(A)" src = "./mogi-left.jpg">
+                    </div></p>
+                    <p>Right Side(B)<div style="width:50%;">
+                      <img id="sibahu-left(A)" src = "./mogi-right.jpg">
+                    </div></p>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <!--/*講堂のマップ*/ -->
+                  <div class="map-koudou-list">
+                    <div class="map-title">
+                      講堂付近
+                    </div>
+                    <div style="width:50%;">
+                      <img id="koudou" src = "./koudou.jpg">
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <!--/*国際学部棟マップ*/ -->
+                  <div class="map-kokusai-list">
+                    <div class="map-title">
+                      講義棟
+                    </div>
+                    <p>ーー1Fーー</p>
+                    <div style="width:50%;">
+                      <img id="kougi1F" src = "./kougi1F.jpg">
+                    </div>
+                    <p>ーー3Fーー</p>
+                    <div style="width:50%;">
+                      <img id="kougi3F" src = "./kougi3F.jpg">
+                    </div>
+                    <p>ーー4Fーー</p>
+                    <div style="width:50%;">
+                      <img id="kougi4F" src = "./kougi4F.jpg">
+                    </div>
+                    <p>ーー5Fーー</p>
+                    <div style="width:50%;">
+                      <img id="kougi5F" src = "./kougi5F.jpg">
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <!--/*芸術学部棟マップ*/ -->
+                  <div class="map-geijyutu-list">
+                    <div class="map-title">
+                      芸術学部棟
+                    </div>
+                    <p>ーー1・2Fーー</p>
+                    <div style="width:50%;">
+                      <img id="geijyutu1-2F" src = "./geijyutu12F.jpg">
+                    </div>
+                    <p>ーー3Fーー</p>
+                    <div style="width:50%;">
+                      <img id="geijyutu3F" src = "./geijyutu3F.jpg">
+                    </div>
+                    <p>ーー4Fーー</p>
+                    <div style="width:50%;">
+                      <img id="geijyutu4F" src = "./geijyutu4F.jpg">
+                    </div>
+                    <p>ーー5Fーー</p>
+                    <div style="width:50%;">
+                      <img id="geijyutu5F" src = "./geijyutu5F.jpg">
+                    </div>
+                    <p>ーー6Fーー</p>
+                    <div style="width:50%;">
+                      <img id="geijyutu6F" src = "./geijyutu6F.jpg">
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <!--/*その他のマップ*/ -->
+                  <div class="map-sonota-list">
+                    <div class="map-title">
+                      学生会館
+                    </div>
+                    <div style="width:50%;">
+                      <img id="gakusei2F" src = "./gakusei2F.jpg">
+                    </div>
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <br><br>
+          <div class="access">
+            <h1>アクセス</h1>
+            <p style="font-size: 22px;">【アストラムライン】</p>
+            <p>大塚駅下車　徒歩２５分</p>
+            <p style="font-size: 22px;">【バス】</p>
+            <p>広島バスセンターより</p>
+            <p>２番乗り場「くすの木台」</p>
+            <p>「市立大学前」下車</p>
+            <p>４番乗り場「花の木台」「こころ西風梅苑」行き</p>
+            <p style="padding-bottom: 30px;">「沼田料金所前」下車　徒歩８分</p>
+            <!--/*グーグルマップ*/ -->
+            <div class="google-map">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3290.5389110667784!2d132.41392851515604!3d34.4384654805026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x355a9846b8b10471%3A0xb50adccc4687ad83!2z5bqD5bO25biC56uL5aSn5a2m!5e0!3m2!1sja!2sjp!4v1648142283086!5m2!1sja!2sjp"
+               width="800" height="600" style="border:10; position: relative;
+               z-index: 100;"
+               allowfullscreen="" loading="lazy"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="#page_top" class="page_top_btn">トップへ戻る</a>
+
+    </main>
+
+
+    <!--/*フッタ―始まり*/ -->
+    <footer>
+      <div class="footer-title">お問い合わせ</div>
+      <div class="footer-inner">
+        <table style="margin: auto;">
+          <tr><td>〒731-3194</td></tr>
+          <tr><td>広島市大塚３丁目４番１号</td></tr>
+          <tr><td>学生会館２階大祭室</td></tr>
+          <tr><td>TEL & fax ： (082)848-5443</td></tr>
+          <tr><td>MAIL ： <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="f099939899949199839199b09f85849c9f9f9bde9a80de">[email&#160;protected]</a></td></tr>
+          <tr><td>広島市立大学大学祭実行委員会</td></tr>
+        </table>
+        <br><br>
+        <tr>
+          <!--/*ツイッター*/ -->
+          <td><a href="https://twitter.com/ichidai_sai" style="text-decoration: none;">
+            <img id="Twitter" src="2021Twitterlogo-blue.png" alt="ichidaisai-twitter" width="50" height="50" style="text-decoration:none;">
+          </a></td>
+        </tr>
+        <tr>
+          <td>　　 </td>
+        </tr>
+        <tr>
+          <!--/*インスタグラム*/ -->
+          <td><a href="https://www.instagram.com/ichidai_sai/">
+            <img id="Instagram" src="InstagramGlyphGradientRGB.png" alt="ichidaisai-instagram" width="50" height="50">
+          </a></td>
+        <br><br><br>
+      </div>
+    </footer>
+    <!--/*フッタ―終わり*/-->
+    <!-- 水玉js -->
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+      for(let i=0;i<50;i++){
+        randomPaint();
+      }
+      function randomPaint(){
+        const back=document.getElementById('back');
+        const top_random=Math.random()*window.innerHeight+'px';
+        const left_random=Math.random()*window.innerWidth+'px';
+        const height_random=Math.random()*200+'px';
+        const r_color=parseInt(Math.random()*256);
+        const g_color=parseInt(Math.random()*256);
+        const b_color=parseInt(Math.random()*256);
+        const elem=document.createElement('div');
+        elem.classList.add('paint');
+        elem.style.top=top_random;
+        elem.style.left=left_random;
+        elem.style.width=height_random;
+        elem.style.height=height_random;
+        elem.style.backgroundColor='rgb('+r_color+','+g_color+','+b_color+')';
+        console.log('rgb('+r_color+','+g_color+','+b_color+')');
+        back.appendChild(elem);
+      }
+    </script>
+  <!-- 水玉js終わり -->
+  </body>
+</html>

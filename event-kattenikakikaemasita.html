@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <link href="./common-header-footer.css" rel="stylesheet" type="text/css" media="all">
+    <meta charset="utf-8">
+    <title>Stage+Event</title>
+    <style>
+    /*表のデザイン*/
+.eventstyle{
+      position:relative;
+      z-index:99;
+      border-top:solid 2px rgb(0,0,0);
+      border-bottom: solid 2px rgb(0,0,0);
+      border-right: solid 2px rgb(0,0,0);
+      border-left: solid 2px  rgb(0,0,0);
+      margin: 30px;
+      padding: 30px;
+      border-radius: 30px;
+      background-color:rgba(255,255,255,0.7);
+    }
+.table {
+  background-color:rgba(255,255,255,0.7);
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+    border: solid 1px rgb(0,0,0);
+  }
+/*見出しのデザイン*/
+  .th{
+    padding: 7px 15px; /* 上下 左右 */
+  border: solid 1px rgb(0,0,0);
+  font-size: 20px;
+  color: rgb(0,0,0);
+  font-size: 22px;
+  }
+  .th-and-wrap{
+    padding: 7px 15px; /* 上下 左右 */
+  border: solid 1px rgb(0,0,0);
+  font-size: 20px;
+  color: rgb(0,0,0);
+  font-size: 22px;
+  white-space: nowrap;
+  }
+/*要素のデザイン*/
+  .td{
+    padding: 7px 15px; /* 上下 左右 */
+  border: solid 1px rgb(0,0,0);
+  font-size: 20px;
+    border: dashed 1px rgb(0,0,0);
+  }
+  .td-and-wrap{
+    padding: 7px 15px; /* 上下 左右 */
+  border: solid 1px rgb(0,0,0);
+  font-size: 20px;
+    border: dashed 1px rgb(0,0,0);
+    white-space: nowrap;
+  }
+
+  p{
+    text-align: center;
+    width: 100%;
+  }
+  /*eventのボタンデザイン*/
+  .a{
+    font-size: 16.8px;
+    z-index: 100;
+    position: relative;
+    white-space: nowrap;
+    display: inline-block;
+    text-decoration:none;
+    text-align: center;
+    width: 105px;
+    margin-top: 10px;
+    margin-right: 10px;
+    padding: 15px;
+    border: 2px solid black;
+    border-radius: 40px;
+    background-color: black;
+    color: white;
+    box-shadow: 4px 6px 3px 0px rgba(0, 0, 0, .5);
+  }
+  .a:hover{
+    border: 2px solid #33CC66;
+    background-color: #33CC66;
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+    transition: .5s;
+  }
+  .a:active{
+    background-color: white;
+    color: #33CC66;
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+    transition: 0s;
+  }
+h2{
+  text-align: center;
+}
+
+
+</style>
+  </haed>
+  <body style="margin:0">
+    <div id="page_top"></div>
+    <a href="#page_top" class="page_top_btn">トップへ戻る</a>
+    <!-- /*水玉のhtml*/ -->
+    <div id="back"></div>
+    <header>
+      <div class="header-title">
+        <!--/*市大祭のロゴ*/ -->
+        <div id="ichidaisai">
+          <a href="./home.html">
+          <img id="ichidaisai-rogo" src="rogogo-reverse-cut-clear.jpg" style="width: 50%;">
+          </a>
+        </div>
+      </div>
+      <div class="header-table">
+        <table>
+          <tr>
+            <!--/*メニューボタン*/ -->
+            <td><a id="Stage-Event-button" href="./event.html">Stage+Event</a><td>
+            <td><a id="Aboutus-button" href="./iinkai.html">About us</a><td>
+            <td><a id="Map-Access-button" href="./access.html">Map+Access</a></td>
+          </tr>
+        </table>
+      </div>
+    </header>
+    <!-- /*水玉のhtml*/ -->
+
+
+
+    <p>
+      <a class="a" href="#sattime">29日(sat)</a>
+      <a class="a" href="#suntime">30日(sun)</a>
+    </br>
+  </br>
+      <a class="a" href="#plan">カフェ・展示</a>
+      <a class="a" href="#mockshop">模擬店</a>
+    </p>
+
+
+
+ <div class="eventstyle">
+   <h2 style="color:#000" id="sattime"><u>　29日のタイムスケジュール　</u></h2>
+    <h2 style="color:#52a2d7;" id="mainstage">メインステージ</h2>
+    <table class="table">
+      <tbody>
+        <tr>
+          <th class="th"> 時間 </th>
+          <th class="th">　イベント　</th>
+        </tr>
+        <tr>
+          <td class="td">　10:00~10:10　</td>
+          <td class="td">オープニング</td>
+        </tr>
+        <tr>
+          <td class="td">　10:15~12:00　</td>
+          <td class="td">POMP’22出張ライブ</td>
+        </tr>
+        <tr>
+          <td class="td">　13:05~14:05　</td>
+          <td class="td">Best Body Ichidai 2022</td>
+        </tr>
+        <tr>
+          <td class="td">　14:15~14:50　</td>
+          <td class="td">ビンゴ大会</td>
+        </tr>
+        <tr>
+          <td class="td">　15:00~15:15　</td>
+          <td class="td">Bamboo musical instruments</td>
+        </tr>
+        <tr>
+          <td class="td">　15:25~15:50　</td>
+          <td class="td">紙飛行機大会</td>
+        </tr>
+        <tr>
+          <td class="td">　16:00~16:20　</td>
+          <td class="td">気配斬り大会</td>
+        </tr>
+        <tr>
+          <td class="td">　17:00~17:30　</td>
+          <td class="td">東京ホテイソン　お笑いライブ</td>
+        </tr>
+        <tr>
+          <td class="td">　18:00~20:00　</td>
+          <td class="td">大学祭アカペラライブ</td>
+        </tr>
+      </tbody>
+      </table>
+          <table class="table">
+            <h2 style="color:#89C35C;" id="bighall">講堂大ホール</h2>
+              <tr>
+                <th class="th">時間</th>
+                <th class="th">　イベント　</th>
+              </tr>
+              <tr>
+                <td class="td">　11:00~12:00　</td>
+                <td class="td">　マンドリン・ギター部　</td>
+              </tr>
+              <tr>
+                <td class="td">　13:00~15:30　</td>
+                <td class="td">　大学祭アカペラライブ　</td>
+              </tr>
+              <tr>
+                <td class="td">　17:00~19:00　</td>
+                <td class="td">　　吹奏楽部　定期演奏会　　</td>
+              </tr>
+            </table>
+      <table class="table">
+        <h2 style="color:#b53139;" id="smallhall">講堂小ホール</h2>
+          <tr>
+            <th class="th">時間</th>
+            <th class="th">イベント</th>
+          </tr>
+          <tr>
+            <td class="td">　13:00~14:00　</td>
+            <td class="td">　　後援会理事会　　</td>
+          </tr>
+          <tr>
+            <td class="td">　14:15~17:00　</td>
+            <td class="td-and-wrap">　　ホームカミングデー　　</td>
+          </tr>
+        </table>
+</div>
+<div class="eventstyle">
+  <h2 style="color:#000" id="suntime"><u>　30日のタイムスケジュール　</u></h2>
+   <h2 style="color:#52a2d7;" id="mainstage">メインステージ</h2>
+   <table class="table">
+     <tbody>
+       <tr>
+         <th class="th"> 時間 </th>
+         <th class="th">　イベント　</th>
+       </tr>
+       <tr>
+         <td class="td">　10:00~12:00　</td>
+         <td class="td">POMP'22出張ライブ</td>
+       </tr>
+       <tr>
+         <td class="td">　10:15~12:00　</td>
+         <td class="td">POMP’22出張ライブ</td>
+       </tr>
+       <tr>
+         <td class="td">　13:05~13:45　</td>
+         <td class="td">女装男装コンテスト</td>
+       </tr>
+       <tr>
+         <td class="td">　14:00~15:30　</td>
+         <td class="td">OBOGアカペラステージ</td>
+       </tr>
+       <tr>
+         <td class="td">　15:45~16:50　</td>
+         <td class="td">DAY EVENT</td>
+       </tr>
+       <tr>
+         <td class="td">　17:00~19:30　</td>
+         <td class="td">ダンス部ステージ発表</td>
+       </tr>
+       <tr>
+         <td class="td">　19:40~　</td>
+         <td class="td">フィナーレ</td>
+       </tr>
+     </tbody>
+     </table>
+         <table class="table">
+           <h2 style="color:#89C35C;" id="bighall">講堂大ホール</h2>
+             <tr>
+               <th class="th">時間</th>
+               <th class="th">　イベント　</th>
+             </tr>
+             <tr>
+               <td class="td">　13:00~　　  </td>
+               <td class="td">ポケモンユナイト　</td>
+             </tr>
+           </table>
+     <table class="table">
+       <h2 style="color:#b53139;" id="smallhall">講堂小ホール</h2>
+         <tr>
+           <th class="th">時間</th>
+           <th class="th">イベント</th>
+         </tr>
+         <tr>
+           <td class="td">　13:00~15:00　</td>
+           <td class="td">　　大学祭上映会　　　</td>
+         </tr>
+       </table>
+</div>
+
+
+          <div class="eventstyle">
+              <table class="table">
+            <h2 style="color:#ffcc00;" id="plan">カフェ・展示</h2>
+              <tr>
+                <th class="th"></th>
+                <th class="th-and-wrap">国際学部棟</th>
+                <th class="th">芸術学部棟</th>
+              </tr>
+
+              <tr>
+                <th class="th">1階</th>
+                <td class="td">MAC電音</td>
+                <td class="td">咖喱、馨る</td>
+              </tr>
+
+              <tr>
+                <th  class="th"rowspan="8">2階</th>
+                <td class="td" rowspan="8"></td>
+                <td class="td">uru uru urushi</td>
+              </tr>
+              <tr>
+                <td class="td">となりの芝生</td>
+              </tr>
+              <tr>
+                <td class="td">凸凹堂</td>
+              </tr>
+              <tr>
+                <td class="td">CREA TIVE</td>
+              </tr>
+              <tr>
+                <td class="td">BONPOC</td>
+              </tr>
+              <tr>
+                <td class="td">天地創造部</td>
+              </tr>
+              <tr>
+                <td class="td">シュガーベイビーラブ</td>
+              </tr>
+              <tr>
+                <td class="td">ふるーつばぶちゃんず</td>
+              </tr>
+
+              <tr>
+                <th class="th" rowspan="10">3階</th>
+                <td class="td" rowspan="10">LEGO KART</td>
+                <td class="td">美術部展示</td>
+              </tr>
+              <tr>
+                <td class="td">よりみち</td>
+              </tr>
+              <tr>
+                <td class="td">んをわ</td>
+              </tr>
+              <tr>
+                <td class="td">coko</td>
+              </tr>
+              <tr>
+                <td class="td">采咲い</td>
+              </tr>
+              <tr>
+                <td class="td">市大写真部展~お写んぽ日和~</td>
+              </tr>
+              <tr>
+                <td class="td">せいんちゅ</td>
+              </tr>
+              <tr>
+                <td class="td">haconiwa</td>
+              </tr>
+              <tr>
+                <td class="td">knick-knack</td>
+              </tr>
+              <tr>
+                <td class="td">もちもち中華</td>
+              </tr>
+
+              <tr>
+                <th class="th" rowspan="6">4階</th>
+                <td class="td">＃hiro_it</td>
+                <td class="td">Our Friendship=Quick Dry</td>
+              </tr>
+              <tr>
+                <td class="td">極楽</td>
+                <td class="td">ねこまみれ</td>
+              </tr>
+              <tr>
+                <td class="td">SIG cafe</td>
+                <td class="td">金工舎</td>
+              </tr>
+              <tr>
+              <td class="td">大学祭落語会</td>
+              <td class="td">Into the Woods</td>
+              </tr>
+              <tr>
+              <td class="td">天文体験記</td>
+              <td class="td">あつまれ3Dの森</td>
+              </tr>
+              <tr>
+              <td class="td">angel and devil cafe</td>
+              <td class="td">限界大学生の日常。</td>
+              </tr>
+              <tr>
+                <th class="th" rowspan="2">5階</th>
+                <td class="td" >もいちと愉快な仲間たち</td>
+                <td class="td">日本画展示</td>
+              </tr>
+              <tr>
+                <td class="td">カフェぴんぽんズ</td>
+                <td class="td">日本画専攻有志</td>
+              </tr>
+              <tr>
+                <th class="th">6階</th>
+                <td class="td"></td>
+                <td class="td">油絵4年有志展</td>
+              </tr>
+              <tr>
+                <th class="th" colspan="3">その他</th>
+              </tr>
+              <tr>
+                <th class="th" rowspan="1" colspan="1">学生会館2階</th>
+                <td class="td">表千家　大学祭茶会</td>
+              </tr>
+
+              <tr>
+                <th class="th"  >講堂付近</th>
+                <td class="td">上田宗箇流茶道部　大学祭茶会</td>
+                <td class='td'>HAPPY RAINBOW & HAJIMEMASHITE</td>
+              </tr>
+
+            </table>
+          </div>
+
+      <div class="eventstyle">
+            <table class="table">
+              <h2 style="color:#6a5acd;" id="mockshop">模擬店</h2>
+                <tr>
+                  <th class="th" colspan="2">模擬店Left(A)Side</th>
+                </tr>
+                <tr>
+                  <th class="th">１</th>
+                  <td class="td">FEST-HIROSHIMA</td>
+                </tr>
+                <tr>
+                  <th class="th">２</th>
+                  <td class="td">アーポテト</td>
+                </tr>
+                <tr>
+                  <th class="th">３</th>
+                  <td class="td">ワンゲルチーズボール</td>
+                </tr>
+                <tr>
+                  <th class="th">４</th>
+                  <td class="td">トッポギ～君がくれた愛しい美味～</td>
+                </tr>
+                <tr>
+                  <th class="th">５</th>
+                  <td class="td">日本一のたこ焼き集団</td>
+                </tr>
+                <tr>
+                  <th class="th">６</th>
+                  <td class="td">おでんとおうどんのおみせ</td>
+                </tr>
+                <tr>
+                  <th class="th">７</th>
+                  <td class="td">焼き鳥</td>
+                </tr>
+                <tr>
+                  <th class="th">８</th>
+                  <td class="td">CHENELチェ―しか勝たん</td>
+                </tr>
+                <tr>
+                  <th class="th">９</th>
+                  <td class="td">フランクの橋本</td>
+                </tr>
+                <tr>
+                  <th class="th">10</th>
+                  <td class="td">トライアチュロン</td>
+                </tr>
+                <tr>
+                  <th class="th">11</th>
+                  <td class="td">そーちゃんのリーゼントわたあめ</td>
+                </tr>
+                <tr>
+                  <th class="th">12</th>
+                  <td class="td">きんにくし焼き</td>
+                </tr>
+                <tr>
+                  <th class="th" colspan="2">模擬店Right(B)Side</th>
+                </tr>
+                <tr>
+                  <th class="th">１</th>
+                  <td class="td">俺のパン。</td>
+                </tr>
+                <tr>
+                  <th class="th">２</th>
+                  <td class="td">ビードロ</td>
+                </tr>
+                <tr>
+                  <th class="th">３</th>
+                  <td class="td">ビジュツブ</td>
+                </tr>
+                <tr>
+                  <th class="th">４</th>
+                  <td class="td">雑貨屋ぶち</td>
+                </tr>
+                <tr>
+                  <th class="th">５</th>
+                  <td class="td">キャンドルワークショップ</td>
+                </tr>
+                <tr>
+                  <th class="th">６</th>
+                  <td class="td">ワッフルと珈琲とわたくし</td>
+                </tr>
+                <tr>
+                  <th class="th">７</th>
+                  <td class="td">ベビーカステラ</td>
+                </tr>
+                <tr>
+                  <th class="th">８</th>
+                  <td class="td">Sa2maimo cafe</td>
+                </tr>
+                <tr>
+                  <th class="th">９</th>
+                  <td class="td">わふわふ</td>
+                </tr>
+                <tr>
+                  <th class="th">10</th>
+                  <td class="td">狩猟探検部</td>
+                </tr>
+                <tr>
+                  <th class="th">11</th>
+                  <td class="td">大学めし</td>
+                </tr>
+                <tr>
+                  <th class="th">＊キッチンカー</th>
+                  <td class="td">ラルロット</td>
+                </tr>
+              </table>
+            </div>
+
+            <!-- 水玉js -->
+              <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+                for(let i=0;i<50;i++){
+                  randomPaint();
+                }
+                function randomPaint(){
+                  const back=document.getElementById('back');
+                  const top_random=Math.random()*window.innerHeight+'px';
+                  const left_random=Math.random()*window.innerWidth+'px';
+                  const height_random=Math.random()*200+'px';
+                  const r_color=parseInt(Math.random()*256);
+                  const g_color=parseInt(Math.random()*256);
+                  const b_color=parseInt(Math.random()*256);
+                  const elem=document.createElement('div');
+                  elem.classList.add('paint');
+                  elem.style.top=top_random;
+                  elem.style.left=left_random;
+                  elem.style.width=height_random;
+                  elem.style.height=height_random;
+                  elem.style.backgroundColor='rgb('+r_color+','+g_color+','+b_color+')';
+                  console.log('rgb('+r_color+','+g_color+','+b_color+')');
+                  back.appendChild(elem);
+                }
+              </script>
+              <!-- 水玉js終わり -->
+
+
+              <!--/*フッタ―始まり*/ -->
+               <footer>
+                 <div class="footer-title">お問い合わせ</div>
+                 <div class="footer-inner">
+                   <table style="margin: auto;">
+                     <tr><td>〒731-3194</td></tr>
+                     <tr><td>広島市大塚３丁目４番１号</td></tr>
+                     <tr><td>学生会館２階大祭室</td></tr>
+                     <tr><td>TEL & fax ： (082)848-5443</td></tr>
+                     <tr><td>MAIL ： <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="8ee7ede6e7eaefe7fdefe7cee1fbfae2e1e1e5a0e4fea0">[email&#160;protected]</a></td></tr>
+                     <tr><td>広島市立大学大学祭実行委員会</td></tr>
+                   </table>
+                   <br><br>
+                   <tr>
+                     <!--/*ツイッター*/ -->
+                     <td><a style="text-decoration:none;" href="https://twitter.com/ichidai_sai">
+                       <img id="Twitter" src="2021Twitterlogo-blue.png" alt="ichidaisai-twitter" width="50" height="50">
+                     </a></td>
+                   </tr>
+                   <tr>
+                     <td>　　 </td>
+                   </tr>
+                   <tr>
+                     <!--/*インスタグラム*/ -->
+                     <td><a href="https://www.instagram.com/ichidai_sai/">
+                       <img id="Instagram" src="InstagramGlyphGradientRGB.png" alt="ichidaisai-twitter" width="50" height="50">
+                     </a></td>
+                   <br><br><br>
+                 </div>
+               </footer>
+               <!--/*フッタ―終わり*/-->
+      <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body>
+</html>

@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+      <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+      <link href="./new6-common-header-footer.css" rel="stylesheet" type="text/css" media="all">
+        <meta charset="utf-8">
+      <title>News</title>
+      <style media="screen">
+    body,html {
+      margin: 0px;
+      width: 100%;
+      height: 100%;
+      background-color: white;
+    }
+    p {
+      margin-left: 9px;
+      margin-right: auto;
+      margin-top: auto;
+      margin-bottom: auto;
+      font-size: 20px;
+    }
+    h3 {
+      margin: auto;
+    }
+    .news {
+      text-align: left;
+      margin-top: 30px;
+      margin-right: 150px;
+      margin-left: 150px;
+      padding: 50px;
+      border: 2px solid black;
+      border-radius: 30px;
+      background-color: rgba(255,255,255,0.7);
+      position: relative;
+      z-index: 1;
+    }
+    .paint {
+      opacity: 0.2;
+      background-color: rgb(192, 61, 9);
+      position: fixed;
+      border-radius: 50%;
+      height: 120px;
+      width: 120px;
+      z-index: 0;
+      -ms-filter: blur(0px);
+      filter: blur(0px);
+    }
+    .page_top_btn {
+      position: fixed;
+      z-index: 100;
+      bottom: 10px;
+      right: 10px;
+    }
+    .page_top_btn:hover {
+      transform: scale(1.1);
+      transition-duration: 0.5s;
+      color: white;
+    }
+
+    </style>
+  </head>
+
+  <body style="margin:0px;">
+    <div id="page_top"></div>
+    <p style="margin:0px;">
+     <a href="#page_top" class="page_top_btn">トップへ戻る</a>
+   </p>
+
+    <!-- /*水玉のhtml*/ -->
+    <div style="z-index:0; position: fixed;" id="back">
+      <div class="paint" style="top: 578.478px; left: 918.882px; width: 119.105px; height: 119.105px; background-color: rgb(49, 54, 95);"></div>
+      <div class="paint" style="top: 387.53px; left: 999.282px; width: 142.663px; height: 142.663px; background-color: rgb(92, 30, 95);"></div>
+      <div class="paint" style="top: 123.387px; left: 927.4px; width: 79.7584px; height: 79.7584px; background-color: rgb(153, 23, 47);"></div>
+      <div class="paint" style="top: 348.768px; left: 534.951px; width: 182.092px; height: 182.092px; background-color: rgb(74, 249, 147);"></div>
+      <div class="paint" style="top: 735.959px; left: 1151.94px; width: 144.696px; height: 144.696px; background-color: rgb(17, 228, 152);"></div>
+      <div class="paint" style="top: 649.135px; left: 391.422px; width: 28.013px; height: 28.013px; background-color: rgb(137, 12, 78);"></div>
+      <div class="paint" style="top: 632.14px; left: 1084.84px; width: 49.9822px; height: 49.9822px; background-color: rgb(28, 185, 17);"></div>
+      <div class="paint" style="top: 316.221px; left: 827.459px; width: 82.4296px; height: 82.4296px; background-color: rgb(202, 118, 212);"></div>
+      <div class="paint" style="top: 127.635px; left: 79.7902px; width: 108.874px; height: 108.874px; background-color: rgb(255, 210, 185);"></div>
+      <div class="paint" style="top: 729.23px; left: 1136.53px; width: 43.4068px; height: 43.4068px; background-color: rgb(115, 52, 100);"></div>
+      <div class="paint" style="top: 120.725px; left: 666.264px; width: 40.1454px; height: 40.1454px; background-color: rgb(60, 110, 55);"></div>
+      <div class="paint" style="top: 377.421px; left: 1170.16px; width: 11.4453px; height: 11.4453px; background-color: rgb(121, 161, 47);"></div>
+      <div class="paint" style="top: 742.495px; left: 641.533px; width: 48.6921px; height: 48.6921px; background-color: rgb(252, 81, 64);"></div>
+      <div class="paint" style="top: 509.645px; left: 1121.51px; width: 36.8249px; height: 36.8249px; background-color: rgb(173, 215, 25);"></div>
+      <div class="paint" style="top: 492.736px; left: 90.5515px; width: 57.0876px; height: 57.0876px; background-color: rgb(1, 6, 37);"></div>
+      <div class="paint" style="top: 84.1582px; left: 979.708px; width: 138.869px; height: 138.869px; background-color: rgb(161, 195, 36);"></div>
+      <div class="paint" style="top: 284.363px; left: 559.415px; width: 103.582px; height: 103.582px; background-color: rgb(127, 34, 131);"></div>
+      <div class="paint" style="top: 251.391px; left: 1508.26px; width: 73.7847px; height: 73.7847px; background-color: rgb(250, 46, 89);"></div>
+      <div class="paint" style="top: 693.166px; left: 147.427px; width: 151.827px; height: 151.827px; background-color: rgb(134, 102, 107);"></div>
+      <div class="paint" style="top: 234.875px; left: 1470.3px; width: 67.5165px; height: 67.5165px; background-color: rgb(63, 205, 101);"></div>
+      <div class="paint" style="top: 573.789px; left: 1000.57px; width: 45.513px; height: 45.513px; background-color: rgb(202, 159, 55);"></div>
+      <div class="paint" style="top: 489.857px; left: 1297.24px; width: 81.9906px; height: 81.9906px; background-color: rgb(194, 154, 33);"></div>
+      <div class="paint" style="top: 585.889px; left: 278.182px; width: 76.8756px; height: 76.8756px; background-color: rgb(21, 201, 234);"></div>
+      <div class="paint" style="top: 419.142px; left: 734.24px; width: 54.426px; height: 54.426px; background-color: rgb(103, 192, 98);"></div>
+      <div class="paint" style="top: 661.032px; left: 1008.99px; width: 94.6123px; height: 94.6123px; background-color: rgb(253, 213, 5);"></div>
+      <div class="paint" style="top: 215.593px; left: 1335.96px; width: 187.272px; height: 187.272px; background-color: rgb(138, 251, 50);"></div>
+      <div class="paint" style="top: 93.1397px; left: 1273.39px; width: 0.190444px; height: 0.190444px; background-color: rgb(92, 31, 194);"></div>
+      <div class="paint" style="top: 264.614px; left: 1393.95px; width: 120.065px; height: 120.065px; background-color: rgb(50, 200, 72);"></div>
+      <div class="paint" style="top: 314.249px; left: 264.609px; width: 111.454px; height: 111.454px; background-color: rgb(128, 142, 15);"></div>
+      <div class="paint" style="top: 407.686px; left: 715.018px; width: 185.665px; height: 185.665px; background-color: rgb(251, 183, 201);"></div>
+      <div class="paint" style="top: 448.156px; left: 1168.12px; width: 71.7112px; height: 71.7112px; background-color: rgb(109, 66, 159);"></div>
+      <div class="paint" style="top: 462.339px; left: 1155.22px; width: 175.623px; height: 175.623px; background-color: rgb(47, 165, 167);"></div>
+      <div class="paint" style="top: 731.24px; left: 716.112px; width: 86.7922px; height: 86.7922px; background-color: rgb(253, 94, 98);"></div>
+      <div class="paint" style="top: 16.7208px; left: 1506.55px; width: 171.531px; height: 171.531px; background-color: rgb(200, 79, 72);"></div>
+      <div class="paint" style="top: 250.847px; left: 760.89px; width: 182.486px; height: 182.486px; background-color: rgb(105, 59, 126);"></div>
+      <div class="paint" style="top: 234.151px; left: 176.978px; width: 54.4462px; height: 54.4462px; background-color: rgb(72, 99, 246);"></div>
+      <div class="paint" style="top: 666.45px; left: 321.315px; width: 40.8093px; height: 40.8093px; background-color: rgb(108, 55, 203);"></div>
+      <div class="paint" style="top: 86.5475px; left: 608.389px; width: 81.8818px; height: 81.8818px; background-color: rgb(102, 247, 162);"></div>
+      <div class="paint" style="top: 552.027px; left: 359.99px; width: 21.5387px; height: 21.5387px; background-color: rgb(137, 181, 13);"></div>
+      <div class="paint" style="top: 262.946px; left: 73.8958px; width: 142.601px; height: 142.601px; background-color: rgb(122, 20, 127);"></div>
+      <div class="paint" style="top: 413.242px; left: 680.213px; width: 131.575px; height: 131.575px; background-color: rgb(0, 150, 28);"></div>
+      <div class="paint" style="top: 636.023px; left: 645.298px; width: 18.6735px; height: 18.6735px; background-color: rgb(175, 224, 251);"></div>
+      <div class="paint" style="top: 449.705px; left: 1171.22px; width: 187.941px; height: 187.941px; background-color: rgb(219, 210, 70);"></div>
+      <div class="paint" style="top: 184.64px; left: 1359.26px; width: 172.017px; height: 172.017px; background-color: rgb(23, 247, 250);"></div>
+      <div class="paint" style="top: 47.7451px; left: 286.729px; width: 152.381px; height: 152.381px; background-color: rgb(144, 33, 150);"></div>
+      <div class="paint" style="top: 322.751px; left: 1389.58px; width: 71.0072px; height: 71.0072px; background-color: rgb(130, 33, 25);"></div>
+      <div class="paint" style="top: 489.613px; left: 749.145px; width: 78.4322px; height: 78.4322px; background-color: rgb(16, 222, 214);"></div>
+      <div class="paint" style="top: 401.501px; left: 696.737px; width: 124.9px; height: 124.9px; background-color: rgb(70, 126, 109);"></div>
+      <div class="paint" style="top: 230.973px; left: 386.366px; width: 177.791px; height: 177.791px; background-color: rgb(10, 237, 86);"></div>
+      <div class="paint" style="top: 95.7038px; left: 307.582px; width: 28.698px; height: 28.698px; background-color: rgb(109, 193, 111);"></div>
+    </div>
+    <header>
+      <div class="header-title">
+        <!--/*市大祭のロゴ*/ -->
+        <div id="ichidaisai">
+          <a href="./home.html">
+          <img id="ichidaisai-rogo" src="rogogo-reverse-cut-clear.jpg" style="width: 50%;">
+        </a>
+        </div>
+      </div>
+      <div class="header-table">
+        <table>
+          <tbody><tr>
+            <!--/*メニューボタン*/ -->
+            <!-- <td><a id="Home-button" href="./home.html">Home</a></td> -->
+            <td><a id="Stage-Event-button" href="./event.html">Stage+Event</a></td>
+            <td><a id="Aboutus-button" href="./iinkai.html">About us</a></td>
+            <td><a id="Map-Access-button" href="./access.html">Map+Access</a></td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+    </header>
+
+    <h1 style="text-align: center; margin-bottom: auto; color: black; font-family: cursive; font-size: 380%; position:relative; z-index:10;">News</h1>
+    <br>
+
+    <div class="news" id="News10">
+      <h3 style="margin: auto;">2022.11.03</h3>
+      <br>
+      <h3>第29回広島市立大学大学祭 終了しました。</h3>
+      <br>
+      <p>
+         10月29日、30日に行われました、第29回広島市立大学大学祭は無事終了いたしました。
+         <br>
+         円滑な運営にご協力いただき、ありがとうございました。
+         <br>
+         今年度は一般の方にも多くご来場いただけたこと、大変嬉しく思います。
+         <br>
+         楽しんでいただけましたら幸いです。
+      </p>
+      <div>
+        <img src="./firework.jpg" width="50%" height="50%"><alt="花火"></alt>
+      </div>  
+    </div>    
+
+    <div class="news" id="News9">
+      <h3 style="margin: auto;">2022.10.21</h3>
+      <br>
+      <h3>ステージ企画③</h3>
+      <br>
+      <p>
+        10月29日(土)17:00~
+        <br>
+        メインステージにて東京ホテイソンさんのお笑いライブが開催されます！！
+        <br>
+        <br>
+        観覧無料です！
+        <br>
+        ぜひ見に来てください！
+        <br>
+      </p>
+      <div id="tokyohoteison">
+        <img src="./tokyohoteison.jpg" width="50%" height="50%"><alt="東京ホテイソンの画像"></alt>
+      </div>  
+    </div>
+
+    <div class="news" id="News8">
+      <h3 style="margin: auto;">2022.10.21</h3>
+      <br>
+      <h3>ステージ企画②</h3>
+      <br>
+      <p>
+        10月29日(土)14:15~14:50
+        <br>
+        メインステージにてビンゴ大会が行われます！！
+        <br>
+        <br>
+        13:45ごろから中庭でビンゴカードを配ります。
+        <br>
+        誰でも参加いただけます！
+        <br>
+      </p>
+      <div id="bingotaikai">
+        <img src="./bingotaikai.jpg" width="50%" height="50%"><alt="ビンゴ大会の画像"></alt>
+      </div>  
+    </div>
+
+
+    <div class="news" id="News7">
+      <h3 system="margin: auto">2022.10.19</h3>
+      <br>
+      <h3>ステージ企画①</h3>
+      <br>
+      <p>
+        メインステージにて
+        <br>
+        10月29日(土)15:25～紙飛行機大会
+        <br>
+        10月29日(土)16:00～気配斬り大会
+        <br>
+        10月30日(日)13:05～男装・女装コンテスト　が行われます！
+        <br>
+        <br>
+        参加希望の方は<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="e2898b89838997cc8b818a8b86838bd0dba2858f838b8ecc818d8f">[email&#160;protected]</a>からご応募ください！
+        <br>
+        学外の方もご参加いただけます！
+        <br>
+        【締切】10月20日23:59まで
+        <br>
+      </p>
+      <div>
+        <img src="./kamihikouki.png" width="50%" height="50%"><alt="紙飛行機大会ポスター"></alt>
+      </div>
+      <div>
+        <img src="./kehaigiri.png" width="50%" height="50%"><alt="気配斬り大会ポスター"></alt> 
+      </div>
+      <div>
+        <img src="./contest.png" width="50%" height="50%"><alt="男装女装コンテストポスター"></alt>
+      </div>
+    </div>
+
+    
+
+
+    <div class="news" id="News6">
+      <h3 style="margin: auto;">2022.10.15</h3>
+      <br>
+      <h3>ポケモンユナイト大会　開催決定！参加者募集中！</h3>
+      <br>
+      <p>
+        10月30日(日)13時から大ホールにて、ポケモンユナイト大会が行われます！
+        <br>
+        学外の方も、大人の方も、どなたでも参加いただけます！1チーム5人で参加可能です。
+        <br>
+        <br>
+        出演登録は<a href="https://forms.gle/J1RT1XyxT9MMx9Mo6"　target="_blank">こちら</a>から！締切:10/29 23:59
+        <br>※飛び入り参加も可能ですが、当日スムーズに受付を行うために、事前に出演登録されることをおすすめします。
+        <br>
+        <br>
+        ポケモンユナイト公式ページは<a href="https://www.pokemonunite.jp/ja/" target="_blank">こちら</a>
+        <br>
+        <br>
+        ご応募お待ちしております!!
+      </p>
+      <div id="pokemonunite">
+        <img src="./pokemonunite.jpg" width="50%" height="50%"><alt="ポケモンユナイト大会ポスター"></alt>
+      </div>  
+    </div>
+
+
+    <div class="news" id="News5">
+      <h3 style="margin: auto;">2022.07.07</h3>
+      <br>
+      <h3>【企画(学内向け)】ステージ利用者募集！</h3>
+      <br>
+      <p>
+        ステージ利用者を募集しております!
+        <br>
+        大ホール、小ホール、メインステージを利用される方はご応募ください。
+        <br>
+        <br>
+        応募方法
+        <br>
+        1.インスタグラムかツイッターのDMまたは<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="365d5f5d575d435d4f595d43040e425e76515b575f5a1855595b">[email&#160;protected]</a>に参加の旨と自身のメールアドレスを記載して送信
+        <br>
+        2.募集用紙と企画書をお送りしますので、記載して送信
+        <br>
+        <br>
+        募集用紙・企画書の提出をもって応募完了です！
+        <br>
+        締め切り:7月15日(金)18:00
+        <br>
+        <br>
+        ご応募お待ちしております!!
+    </div>
+
+
+    <div class="news" id="News4">
+      <h3 style="margin: auto;">2022.07.05</h3>
+      <br>
+      <h3>【カフェ・模擬出店(学内向け)】第2次出店者募集受付中！7月11日(月)まで！</h3>
+      <br>
+      <p>
+        ただいま第2次出店者募集受付中です！
+        <br>
+        <br>
+        締め切り:7月11日(月)23:59
+        <br>
+        <br>
+        応募は画像のQRコードまたは<a href="https://docs.google.com/forms/d/e/1FAIpQLScIa--IKNFZsjKbN_sv60Q2TGvxwKXt1VGjVlpTgV4EgoYA8w/viewform"  target="_blank">こちら</a>よりお願いします。
+        <br>
+        質問は<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="0b626863626f6a62786a624b647e7f6764646025617b">[email&#160;protected]</a>にご連絡ください。
+        <br>
+        <br>
+        ご応募お待ちしております!!
+      </p>
+      <div style="text-align: center;">
+        <a href="./2ndshutten.jpg"><img src="./2ndshutten.jpg" alt="第2次出店者募集"
+          style="width: 600px; height: 866px;">
+        </a>
+      </div>
+    </div>
+
+    <div class="news" id="News3">
+      <h3 style="margin: auto;">2022.06.20</h3>
+      <br>
+      <h3>【カフェ・模擬出店(学内向け)】第1回出店者会議を開催します</h3>
+      <br>
+      <p>
+        6/24(金)12:10~より、出店者会議を開催いたします。
+        <br>
+        場所は決まり次第メールでお伝えします。また、このページでもお知らせいたします。
+        <br>
+        出店を予定される方はご確認ください。
+      </p>
+      <br>
+      <h3>【6.22追記】</h3>
+      <p>模擬出店:小ホール カフェ出店:大ホール になりました。</p>
+    </div>
+   
+    <div class="news" id="News1">
+    <h3 style="margin: auto;">2022.05.27</h3>
+    <br>
+    <h3>第29回市大祭のポスターを募集します</h3>
+    <br>
+    <p>5/27～7/22にかけて、大学祭のポスターを募集します。本学の学生なら、誰でも参加可能です。参加いただいた方と採用された方には景品を用意しています。</p>
+    <p>詳細は大学祭実行委員会ホームページ等をご覧ください。</p>
+    <p>ご不明な点がありましたら、大学祭実行委員会または担当早川までお気軽にお問い合わせください。</p>
+    <p>装飾局長　早川優吾(<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="a5c39795949695e5c08bcdccd7cad6cdccc8c488c6d08bc4c68bcfd5">[email&#160;protected]</a>)</p>
+    <br>
+    <p style="text-align: right; padding-right: 2px; font-size: 24px;">➢➢応募要綱は
+      <span><a href="./29th.pdf">こちら</span></a>
+    </p>
+    <br>
+    <div style="text-align: center;">
+    <a href="./poster-design.jpg"><img src="./poster-design.jpg" alt="ポスターのデザイン募集"
+      style="width: 600px; height: 866px;">
+    </a>
+  </div>
+  </div>
+    <br>
+    <br>
+
+  <br>
+  <div class="news" id="News2">
+    <h3 style="margin: auto;">2022.05.27</h3>
+    <br>
+    <h3>第29回市大祭ホームページを公開しました</h3>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+
+              for(let i=0;i<50;i++){
+                randomPaint();
+              }
+              function randomPaint(){
+                const back=document.getElementById('back');
+                const top_random=Math.random()*window.innerHeight+'px';
+                const left_random=Math.random()*window.innerWidth+'px';
+                const height_random=Math.random()*200+'px';
+                const r_color=parseInt(Math.random()*256);
+                const g_color=parseInt(Math.random()*256);
+                const b_color=parseInt(Math.random()*256);
+                const elem=document.createElement('div');
+                elem.classList.add('paint');
+                elem.style.top=top_random;
+                elem.style.left=left_random;
+                elem.style.width=height_random;
+                elem.style.height=height_random;
+                elem.style.backgroundColor='rgb('+r_color+','+g_color+','+b_color+')';
+                console.log('rgb('+r_color+','+g_color+','+b_color+')');
+                back.appendChild(elem);
+              }
+            </script>
+
+<!--/*フッタ―始まり*/ -->
+<footer>
+  <div class="footer-title">お問い合わせ</div>
+  <div class="footer-inner">
+    <table style="margin: auto;">
+      <tbody><tr><td>〒731-3194</td></tr>
+      <tr><td>広島市大塚３丁目４番１号</td></tr>
+      <tr><td>学生会館２階大祭室</td></tr>
+      <tr><td>TEL &amp; fax ： (082)848-5443</td></tr>
+      <tr><td>MAIL ： <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="90f9f3f8f9f4f1f9e3f1f9d0ffe5e4fcfffffbbefae0be">[email&#160;protected]</a></td></tr>
+      <tr><td>広島市立大学大学祭実行委員会</td></tr>
+    </tbody></table>
+    <br><br>
+  　
+      <!--/*ツイッター*/ -->
+      <a href="https://twitter.com/ichidai_sai">
+        <img id="Twitter" src="2021Twitterlogo-blue.png" alt="ichidaisai-twitter" width="50" height="50">
+      </a>　
+
+      <!--/*インスタグラム*/ -->
+      <a href="https://www.instagram.com/ichidai_sai/">
+        <img id="Instagram" src="InstagramGlyphGradientRGB.png" alt="ichidaisai-twitter" width="50" height="50">
+      </a>
+    <br><br><br>
+  </div>
+</footer>
+<!--/*フッタ―終わり*/-->
+
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body>
+</html>
